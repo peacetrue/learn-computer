@@ -1,0 +1,47 @@
+= iCircuit
+
+参考：
+
+. https://icircuitapp.com/[官网^]
+
+== 下载
+
+App Store 价格 88 元：
+
+image:iCircuit/price.png[]
+
+下载 V1.8.1 破解版：
+
+https://mac.wmzhe.com/software/14516.html[Mac-Icircuit for Mac下载V1.8.1-Mac完美下载^]
+
+== 使用
+
+主界面：
+
+image:iCircuit/ui.png[]
+
+.菜单栏
+. Sources：源，提供电的
+. Analog：模拟，有针脚的
+. Silicon：硅，由硅构成的
+. Digital：数字，数字元件
+. Circuit：电路
+
+.Circuit
+. Bandwidth(Hz)：带宽
+. Automatic：自动的
+. Autowire：自动线
+
+.基本操作
+. 添加元素
+. 编辑元素
+. 添加电线
+. 观察参数
+
+== 缺陷
+
+. 不能圈选删除
+
+== 技巧
+
+. 每个文件设计一个电路，多个电路之间存在冲突

@@ -1,0 +1,50 @@
+= 常见问题
+
+== macOS 仿真器
+
+有哪些 macOS 系统上，设计和模拟数字逻辑电路的仿真器？
+
+.参考：
+. https://www.zhihu.com/question/25542632[Mac电路仿真？^]
+. https://www.zhihu.com/question/47197820[数字电路这门课有哪些仿真软件可以用啊?(从初级到高级)^]
+
+.软件：
+https://icircuitapp.com/[iCircuit^]::
+支持各平台桌面版。
+https://www.multisim.com/[Multism^]::
+支持 Windows 平台桌面版和在线版。
+https://www.logiccircuit.org[LogicCircuit^]::
+支持 Windows 平台桌面版。
+
+== 电源符号正负极
+
+电源符号中，用圆圈表示电源的，一般都标有正负号（或只标+号）表示正极。
+如果是长短两根线表示电源的，长线为正极。 如果以符号表示电源极性的，如Uab、Ubc等，则下标的第一个字母为正极。
+
+== SPICE
+
+https://zh.wikipedia.org/zh-cn/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E9%80%9A%E7%94%A8%E6%A8%A1%E6%8B%9F%E7%A8%8B%E5%BA%8F[集成电路通用模拟程序^]
+（英语：Simulation Program with Integrated Circuit Emphasis, SPICE），是一种用于电路描述与仿真的语言与仿真器软件，用于检测电路的连接和功能的完整性，以及用于预测电路的行为。SPICE主要用于模拟电路和混合信号电路的仿真。由此我们便可以清楚地了解：SPICE这套程序原先发展的目的是为了模拟电子系统中日益重要的集成电路。
+
+由于集成电路不如传统电路一般可以在面包板（breadboard）或印刷电路板（Printed circuit board）上做实验来验证设计结果，所以为了提高集成电路正式生产时的良率（yield）及降低成本，势必要在进入实际工艺阶段前对其电路特性做“检查”，确保性能在规格范围之内。
+
+== SPST
+
+单刀单掷开关（single-pole single-throw）。
+
+== https://zh.wikipedia.org/zh-hans/%E5%8A%9F%E7%8E%87[功率^]
+
+功率定义为能量转换或使用的速率，以单位时间的能量大小来表示，即是作功的率。
+功率的国际标准制单位是瓦特，名称是得名于十八世纪的蒸汽引擎设计者詹姆斯·瓦特。
+灯泡在单位时间内，电能转换为热能及光能的量就可以用功率表示，瓦特数越高表示单位时间用的能力越高。
+能量转换可以作功，功率也是做功的速率。
+
+== nominal
+
+名义上的，有名无实的
+
+== https://en.wikipedia.org/wiki/Computer-aided_design[CAD]
+
+计算机辅助设计( CAD ) 是使用计算机（或工作站）以帮助设计的创建、修改、分析或优化。
+
+

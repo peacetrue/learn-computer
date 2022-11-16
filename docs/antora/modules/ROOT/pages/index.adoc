@@ -1,0 +1,46 @@
+= 概述
+:website: https://peacetrue.github.io
+:app-group: com.github.peacetrue
+:app-name: learn-computer
+:foresight-repo-id:
+:imagesdir: docs/antora/modules/ROOT/assets/images
+
+image:https://img.shields.io/github/workflow/status/peacetrue/{app-name}/build/master["GitHub Workflow Status",link="https://github.com/peacetrue/{app-name}/actions"]
+image:https://snyk.io/test/github/peacetrue/{app-name}/badge.svg["Snyk",link="https://app.snyk.io/org/peacetrue"]
+image:https://api-public.service.runforesight.com/api/v1/badge/success?repoId={foresight-repo-id}["Foresight",link="https://foresight.thundra.io/repositories/github/peacetrue/{app-name}/test-runs"]
+image:https://img.shields.io/codecov/c/github/peacetrue/{app-name}/master["Codecov",link="https://app.codecov.io/gh/peacetrue/{app-name}"]
+image:https://img.shields.io/nexus/r/{app-group}/{app-name}?label={app-name}&server=https%3A%2F%2Foss.sonatype.org%2F["{app-name}",link="https://search.maven.org/search?q={app-name}"]
+
+//@formatter:off
+
+== 简介（What）
+
+{website}/{app-name}/[{app-name}] 用于记录学习计算机的过程，包含以下内容：
+
+. 制作计算机
+. 制作操作系统
+. 制作编译器
+. 运行 Hello World 程序
+
+== 背景（Why）
+
+对于计算机的运行原理有很多不解之处，希望通过实践的方式加深理解。
+
+== 用法（How）
+
+[source%nowrap,bash,subs="specialchars,attributes"]
+----
+git clone https://github.com/peacetrue/{app-name}
+----
+
+== 参与者（Who）
+
+. peace(xiayouxue@hotmail.com)
+
+== 活动（When）
+
+初始提交于 2022-11-16，最近提交于 2022-11-16。
+
+== 许可证（License）
+
+https://github.com/peacetrue/{app-name}/blob/master/LICENSE[Apache License 2.0^]
