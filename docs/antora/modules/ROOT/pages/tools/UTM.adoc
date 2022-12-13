@@ -1,0 +1,11 @@
+= UTM
+
+.参考
+. https://mac.getutm.app/[UTM^]
+
+
+== Linux 共享
+
+image::utm/linux-share.png[]
+
+image::utm/linux-share-folder.png[]

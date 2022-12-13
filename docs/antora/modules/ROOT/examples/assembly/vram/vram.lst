@@ -1,0 +1,21 @@
+     1                                  ; 在屏幕上显示字符 A
+     2                                  ; 文本模式下的显存：
+     3                                  ; 物理地址：B8000 ~ BFFFF，逻辑地址：B800:0000 ~ B800:7FFF
+     4                                  ; 编译：nasm vram.asm -o vram.bin -l vram.lst
+     5                                  
+     6                                  start:
+     7 00000000 B800B8                      mov ax, 0xb800
+     8 00000003 8ED8                        mov ds, ax
+     9                                      ;mov ds, 0xb800 不存在该指令
+    10                                  
+    11 00000005 C606000041                  mov byte [0x00], 0x41 ;字符 A 的 ASCII 码
+    12 0000000A C606010004                  mov byte [0x01], 0x04 ;黑底红字
+    13 0000000F C606020041                  mov byte [0x02], 0x41
+    14 00000014 C606030004                  mov byte [0x03], 0x04
+    15 00000019 C606040041                  mov byte [0x04], 0x41
+    16 0000001E C606050004                  mov byte [0x05], 0x04
+    17 00000023 EA007C0000                  jmp 0x0000:0x7c00
+    18                                  
+    19                                  current:
+    20 00000028 00<rep 1D6h>                times 510 - (current-start) db 0
+    21 000001FE 55AA                        db 0x55, 0xaa

@@ -1,0 +1,60 @@
+= Vivado
+:installRoot: /home/peace/Downloads/Xilinx
+
+在 https://en.wikipedia.org/wiki/MacOS[macOS 12.5.1^] 上安装 https://www.xilinx.com/products/design-tools/vivado.html[Vivado 2022.2^]。
+
+== 演示效果
+
+演示示例参考 https://www.bilibili.com/video/BV1Sb41157sg[Vivado 开发入门^]。
+
+== 安装环境
+
+Vivado 只有 Windows 版和 Linux 版，没有 macOS 版本。 在 macOS 上使用 Vivado 需要借助虚拟机，使用虚拟机需要考虑性能。
+
+经过一系列尝试后， 选择了 https://mac.getutm.app/[UTM^] + https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64#download[Ubuntu Desktop^] + https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2022.2_1014_8888_Lin64.bin[Xilinx 统一安装程序 2022.2：Linux 自解压 Web 安装程序^]。
+
+== 安装过程
+
+* 文件较大，请预留足够磁盘空间，大于 200G
+image:vivado/size.png[]
+* 安装必要类库 https://en.wikipedia.org/wiki/Ncurses[Ncurses^]，避免"在生成已安装设备列表时挂起"
+image:vivado/hang-up.png[]
+[source%nowrap,bash,subs="specialchars,attributes"]
+----
+sudo apt update
+sudo apt upgrade
+sudo apt install libncurses5
+sudo apt install libtinfo5
+sudo apt install libncurses5-dev libncursesw5-dev
+# sudo apt install ncurses-compat-libs
+# 无法定位软件包 ncurses-compat-libs
+# see https://www.garron.me/en/linux/install-ncurses-library-ubuntu-debian.html
+----
+
+* 安装过程出现问题，从界面点击关闭会删除安装文件和安装过程中产生的文件；从终端退出可避免文件被删除
+* 安装完成后，会删除安装文件
+
+== 许可证
+
+[source%nowrap,lic]
+----
+include::example$vivado_lic2037.lic[]
+----
+
+////
+== 设备驱动列表
+
+[source%nowrap,bash,subs="specialchars,attributes"]
+----
+{installRoot}/Vivado/2018.3/bin/vivado -nolog -nojournal -mode batch -source
+{installRoot}/.xinstall/Vivado_2018.3/scripts/xlpartinfo.tcl -tclargs {installRoot}/Vivado/2022.2/data/parts/installed_devices.txt
+----
+////
+
+
+== 参考
+
+. https://zhuanlan.zhihu.com/p/576364178[Vivado+Vitis 2022.2 安装破解^]
+. https://zhuanlan.zhihu.com/p/573408654[在生成已安装设备列表时挂起^]
+. https://zhuanlan.zhihu.com/p/152589392[走近FPGA之工具篇（上）-Vivado^]
+

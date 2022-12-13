@@ -7,7 +7,7 @@
 .. http://www.hbea.edu.cn/html/zxks/index.shtml[湖北省教育考试院^]
 .. https://zk.hbea.edu.cn/portal-web/login[考生服务平台^]
 . 选择专业；
-image:WechatIMG611.png[]
+image:self-exam/WechatIMG611.png[]
 .. 机械电子工程
 ... https://www.zhihu.com/question/302710160[机械电子工程专业的六大核心课程是哪些？^]
 ... 电子方面：数电、模电、电气控制及 PLC、单片机
@@ -16,7 +16,7 @@ image:WechatIMG611.png[]
 .. 计算机科学与技术
 ... https://www.zhihu.com/question/21405835[计算机科学与技术本科专业有哪些核心课程^]
 . 注册考籍
-image:WechatIMG612.png[]
+image:self-exam/WechatIMG612.png[]
 . 现场或网上信息确认；
 . 网上考试报考；
 . 购买教辅；

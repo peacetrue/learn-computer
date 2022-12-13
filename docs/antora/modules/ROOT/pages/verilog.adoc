@@ -1,0 +1,29 @@
+= Verilog
+
+.参考
+. https://zhuanlan.zhihu.com/p/95081329[全平台轻量开源verilog仿真工具iverilog+GTKWave使用教程^]
+. https://ughe.github.io/2018/11/06/gtkwave-osx[macOS 上的 GTKWave^]
+. https://www.xilinx.com/products/design-tools/vivado.html[vivado^]
+. https://zhuanlan.zhihu.com/p/72078544[Verilog语法之十：过程块（initial和always）^]
+. https://www.chipverify.com/verilog 在线语法学习
+
+.词汇
+. posedge：上升沿
+
+
+== Icarus Verilog
+
+Icarus Verilog 编译器主要包含3个工具：
+
+. iverilog：用于编译 verilog和vhdl文件，进行语法检查，生成可执行文件
+. vvp：根据可执行文件，生成仿真波形文件
+. gtkwave：用于打开仿真波形文件，图形化显示波形
+
+.iverilog+GTKWave
+[source%nowrap,bash,subs="specialchars,attributes"]
+----
+iverilog -o wave timescale.v
+vvp -n wave -lxt2
+/Applications/gtkwave.app/Contents/Resources/bin/gtkwave wave.vcd
+----
+

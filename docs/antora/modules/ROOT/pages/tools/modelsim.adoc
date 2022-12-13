@@ -1,0 +1,5 @@
+== Modelsim
+
+.参考
+
+* https://blog.csdn.net/weixin_42837669/article/details/109657799[Modelsim下载 安装 与 和谐教程^]

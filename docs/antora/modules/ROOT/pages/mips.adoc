@@ -1,0 +1,12 @@
+= MIPS
+
+设计一个 8 位 MIPS 处理器。
+
+.参考
+. https://www.bilibili.com/video/BV1VE411o7nx[北京大学 《计算机组成》 陆俊林^]
+
+== 环境
+
+. https://en.wikipedia.org/wiki/MacOS[macOS 12.5.1^]
+. http://www.falstad.com/circuit/[CircuitJS^]
+

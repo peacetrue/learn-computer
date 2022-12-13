@@ -1,0 +1,51 @@
+= 汇编语言
+
+.参考
+. https://www.bilibili.com/video/BV1xE411N74T[x86汇编语言：从实模式到保护模式]
+. http://www.edu2act.cn/article/bochsjian-yi-jiao-cheng/[Bochs简易教程^]
+. https://www.cnblogs.com/Noura/articles/15212922.html[Bochs启动不显示窗口^]
+
+== 环境
+
+. https://en.wikipedia.org/wiki/MacOS[macOS 12.5.1^]
+. https://brew.sh/[Homebrew 3.6.12^]
+. https://www.nasm.us/[NASM 2.15.05^]
+. https://bochs.sourceforge.io/[Bochs 2.7^]
+. https://www.jetbrains.com/zh-cn/idea/[IntelliJ IDEA 2022.2.3^]
+. https://plugins.jetbrains.com/plugin/9759-nasm-assembly-language[NASM assembly language for JetBrains IDEs v0.5-beta.8^]
+. https://plugins.jetbrains.com/plugin/9339-bined--binary-hexadecimal-editor[Binary/hexadecimal editor plugin 0.2.7^]
+
+== 示例
+
+通过主引导记录，在屏幕上显示字符 AAA。
+
+.编写汇编源代码：
+[source%nowrap,asm,subs="specialchars,attributes"]
+----
+include::example$assembly/vram/vram.asm[]
+----
+
+.编译成机器语言：
+[source%nowrap,bin,subs="specialchars,attributes"]
+----
+nasm vram.asm -o vram.bin -l vram.lst
+----
+
+.创建镜像文件 *floppy-360k.img*：
+[source%nowrap,bin,subs="specialchars,attributes"]
+----
+bximage
+----
+
+. 160k = 2^4^ * 10 * 2^10^
+. 320 sectors = 320 * 512 = 2^5^ * 10 * 2^9^
+
+.启动虚拟机：
+[source%nowrap,bin,subs="specialchars,attributes"]
+----
+bochs -q
+----
+
+// . `xp /512xb 0x7c00`：查看 7c00 处 512 字节的内存，以 16 进制显示每字节
+
+

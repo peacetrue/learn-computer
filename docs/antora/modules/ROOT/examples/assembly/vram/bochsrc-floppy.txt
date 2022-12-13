@@ -1,0 +1,3 @@
+boot: floppy
+floppya: image="floppy-360k.img", status=inserted
+display_library: sdl2

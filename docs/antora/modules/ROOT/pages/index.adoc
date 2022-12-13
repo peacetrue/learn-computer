@@ -18,9 +18,11 @@ image:https://img.shields.io/nexus/r/{app-group}/{app-name}?label={app-name}&ser
 {website}/{app-name}/[{app-name}] 用于记录学习计算机的过程，包含以下内容：
 
 . 制作计算机
-. 制作操作系统
-. 制作编译器
-. 运行 Hello World 程序
+. 制作计算器
+. 制作门电路
+. 了解元器件
+
+用自己设计的编译器编译自己写的程序并运行在自己设计的 CPU 和操作系统上。
 
 == 背景（Why）
 
@@ -39,7 +41,7 @@ git clone https://github.com/peacetrue/{app-name}
 
 == 活动（When）
 
-初始提交于 2022-11-16，最近提交于 2022-11-16。
+初始提交于 2022-11-16，最近提交于 2022-12-13。
 
 == 许可证（License）
 

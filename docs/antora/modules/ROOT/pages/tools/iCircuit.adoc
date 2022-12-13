@@ -1,0 +1,62 @@
+= iCircuit 电路仿真器
+
+参考：
+
+. https://icircuitapp.com/[官网^]
+
+== 下载
+
+App Store 价格 88 元：
+
+image:iCircuit/price.png[]
+
+下载 V1.8.1 破解版：
+
+https://mac.wmzhe.com/software/14516.html[Mac-Icircuit for Mac下载V1.8.1-Mac完美下载^]
+
+NOTE: 最新版为 1.11.3，但未找到对应破解版
+
+== 使用
+
+主界面：
+
+image:iCircuit/ui.png[]
+
+.菜单栏
+. Sources：源，提供电的
+. Analog：模拟，有针脚的
+.. Resistor：电阻器
+.. Inductor：感应器
+.. Oscillator：振荡器
+. Silicon：硅，由硅构成的
+. Digital：数字，数字元件
+. Circuit：电路
+
+.Circuit
+. Bandwidth(Hz)：带宽
+. Automatic：自动的
+. Autowire：自动线
+
+.基本操作
+. 添加元素
+. 编辑元素
+. 添加电线
+. 观察参数
+
+.n-MOSFET
+. off: 空闲的
+. saturation: 饱和
+. linear: 线的
+. threshold voltage: 阈值电压
+. Beta:
+
+== 缺陷
+
+. 圈选操作
+. 中文乱码
+. Text Label 无法正常编辑
+. 不支持嵌套子电路
+
+== 技巧
+
+. 每个文件设计一个电路，多个电路之间存在冲突

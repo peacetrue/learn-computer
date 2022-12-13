@@ -1,0 +1,3 @@
+boot: disk
+ata0-master: type=disk, path="vram.img", mode=flat
+display_library: sdl2

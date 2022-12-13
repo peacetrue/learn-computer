@@ -1,0 +1,27 @@
+$ 1 0.000005 0.26073472713092677 17 5 50 5e-11
+x 446 -723 538 -675 4 12 \s\s\s\s\sI?：输入\\nCLK：时钟\\n\s\s\sR：重置，异步\\n\s\s\sO?：输出
+207 336 -416 288 -416 4 R
+207 336 -448 288 -448 4 CLK
+207 432 -416 480 -416 4 O4
+207 336 -480 288 -480 4 I4
+207 336 -512 288 -512 4 I5
+207 432 -448 480 -448 4 O5
+. register-01 0 2 3 4 CLK 2 1 2 I 1 0 2 O 4 2 3 R 3 2 2 DFlipFlopElm\s1\s4\s5\s2\s3 2\\s0
+. register-02 0 2 4 6 CLK 2 2 2 I0 6 1 2 I1 4 0 2 O0 7 3 3 O1 3 2 3 R 1 3 2 CustomCompositeElm\s2\s4\s3\s1\rCustomCompositeElm\s2\s6\s7\s1 1\\sregister-01\\s2\\\\s0\s1\\sregister-01\\s2\\\\s0
+. register-04 0 2 6 10 CLK 2 4 2 I0 11 3 2 I1 10 2 2 I2 4 1 2 I3 5 0 2 O0 12 5 3 O1 9 4 3 O2 3 3 3 O3 6 2 3 R 1 5 2 CustomCompositeElm\s2\s4\s5\s3\s6\s1\rCustomCompositeElm\s2\s11\s10\s12\s9\s1 1\\sregister-02\\s1\\\\sregister-01\\\\s2\\\\\\\\s0\\s1\\\\sregister-01\\\\s2\\\\\\\\s0\s1\\sregister-02\\s1\\\\sregister-01\\\\s2\\\\\\\\s0\\s1\\\\sregister-01\\\\s2\\\\\\\\s0
+410 336 -576 352 -528 1 register-04 1\sregister-02\s1\\sregister-01\\s2\\\\s0\s1\\sregister-01\\s2\\\\s0 1\sregister-02\s1\\sregister-01\\s2\\\\s0\s1\\sregister-01\\s2\\\\s0
+207 336 -576 288 -576 4 I7
+207 336 -544 288 -544 4 I6
+207 432 -512 480 -512 4 O7
+207 432 -480 480 -480 4 O6
+207 656 -480 704 -480 4 O2
+207 656 -512 704 -512 4 O3
+207 560 -544 512 -544 4 I2
+207 560 -576 512 -576 4 I3
+410 560 -576 576 -528 1 register-04 1\sregister-02\s1\\sregister-01\\s2\\\\s0\s1\\sregister-01\\s2\\\\s0 1\sregister-02\s1\\sregister-01\\s2\\\\s0\s1\\sregister-01\\s2\\\\s0
+207 656 -448 704 -448 4 O1
+207 560 -512 512 -512 4 I1
+207 560 -480 512 -480 4 I0
+207 656 -416 704 -416 4 O0
+207 560 -448 512 -448 4 CLK
+207 560 -416 512 -416 4 R

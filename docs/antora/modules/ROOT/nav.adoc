@@ -1,5 +1,10 @@
 * xref:index.adoc[]
 // * xref:start.adoc[]
 // * xref:manual.adoc[]
+// * xref:元器件.adoc[]
+* 工具
+** xref:tools/vivado.adoc[]
+* xref:assembly.adoc[]
 * xref:reference.adoc[]
+* xref:faq.adoc[]
 * xref:version.adoc[]

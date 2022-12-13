@@ -1,36 +1,59 @@
 = 常见问题
 
+== 术语
+
+. EDA Electronic Design Automatic：电子设计自动化
+. PLD Programmable Logic Device：可编程逻辑器件
+. HDL：硬件描述语言
+. IC Integration Circuit 集成电路
+. SPST single-pole single-throw：单刀单掷开关
+. RTL Resistor Transistor Logic：电阻晶体管处理逻辑
+
 == macOS 仿真器
 
-有哪些 macOS 系统上，设计和模拟数字逻辑电路的仿真器？
+在 macOS 系统上，有哪些设计和模拟数字逻辑电路的仿真器？
 
 .参考：
 . https://www.zhihu.com/question/25542632[Mac电路仿真？^]
 . https://www.zhihu.com/question/47197820[数字电路这门课有哪些仿真软件可以用啊?(从初级到高级)^]
+. https://alternativeto.net/software/pspice/?platform=mac[Mac 的 PSpice 替代品^]
 
-.软件：
+.仿真器：
 https://icircuitapp.com/[iCircuit^]::
-支持各平台桌面版。
+. 收费
+. 支持各平台桌面版
+. 最新版本 1.11.3 发布于 2020 年 6 月 3 日
+http://www.falstad.com/circuit/[CircuitJS^]::
+. 免费
+. 支持各平台桌面版
+. 最新版本 1.11.3 发布于 2022 年 6 月 3 日
+https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html[LTspice^]::
+LTspice 是高性能 SPICE 仿真器软件，包括图形原理图捕获界面。可以探测原理图以产生仿真结果——通过 LTspice 的内置波形查看器轻松探索。与其他 SPICE 解决方案相比，LTspice 的增强功能和模型改进了模拟电路的仿真。
+. 免费
+. 支持 Windows 和 macOS 平台桌面版
+. 最新版本 17.0.42 发布于 2022 年 11 月 17 日
+. https://www.youtube.com/watch?v=6AA4YBtqhwE[macOS 入门教程^]
+. https://www.bilibili.com/video/BV1Sy4y1m73e[windows 详细教程^]
+. https://www.digikey.cn/zh/forum/t/topic/268[在LTSpice中制作子电路或分层电路^]
+. https://electronics.stackexchange.com/questions/412769/lt-spice-subcircuit-programming[Verilog^]
 https://www.multisim.com/[Multism^]::
-支持 Windows 平台桌面版和在线版。
+. 免费、收费
+. 支持 Windows 平台桌面版和在线版
+. 最新版本 14.3.0 发布于 2022 年 4 月 28 日
 https://www.logiccircuit.org[LogicCircuit^]::
-支持 Windows 平台桌面版。
-
-== 电源符号正负极
-
-电源符号中，用圆圈表示电源的，一般都标有正负号（或只标+号）表示正极。
-如果是长短两根线表示电源的，长线为正极。 如果以符号表示电源极性的，如Uab、Ubc等，则下标的第一个字母为正极。
+LogicCircuit – 是用于设计和模拟数字逻辑电路的教育软件。
+. 免费
+. 支持 Windows 平台桌面版
+. 最新版本 2.22.07.22 发布于 2022 年 7 月 23 日
 
 == SPICE
 
 https://zh.wikipedia.org/zh-cn/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E9%80%9A%E7%94%A8%E6%A8%A1%E6%8B%9F%E7%A8%8B%E5%BA%8F[集成电路通用模拟程序^]
-（英语：Simulation Program with Integrated Circuit Emphasis, SPICE），是一种用于电路描述与仿真的语言与仿真器软件，用于检测电路的连接和功能的完整性，以及用于预测电路的行为。SPICE主要用于模拟电路和混合信号电路的仿真。由此我们便可以清楚地了解：SPICE这套程序原先发展的目的是为了模拟电子系统中日益重要的集成电路。
+（英语：Simulation Program with Integrated Circuit Emphasis, SPICE），是一种用于电路描述与仿真的语言与仿真器软件，用于检测电路的连接和功能的完整性，以及用于预测电路的行为。SPICE主要用于模拟电路和混合信号电路的仿真。由此我们便可以清楚地了解：SPICE 这套程序原先发展的目的是为了模拟电子系统中日益重要的集成电路。
 
 由于集成电路不如传统电路一般可以在面包板（breadboard）或印刷电路板（Printed circuit board）上做实验来验证设计结果，所以为了提高集成电路正式生产时的良率（yield）及降低成本，势必要在进入实际工艺阶段前对其电路特性做“检查”，确保性能在规格范围之内。
 
-== SPST
 
-单刀单掷开关（single-pole single-throw）。
 
 == https://zh.wikipedia.org/zh-hans/%E5%8A%9F%E7%8E%87[功率^]
 
@@ -47,4 +70,123 @@ https://zh.wikipedia.org/zh-cn/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E9%80%9A%E7%
 
 计算机辅助设计( CAD ) 是使用计算机（或工作站）以帮助设计的创建、修改、分析或优化。
 
+== 资料
 
+工欲善其事必先利其器。
+
+. 《模拟电子技术基础》
+.. https://www.bilibili.com/video/BV1Y7411e7hQ[模拟电子技术基础 上海交大 郑益慧老师主讲 通俗易懂 难得的课程 强烈推荐 北航921必备 上交大模电^]
+. 《数字电子技术基础》
+.. https://www.bilibili.com/video/BV18p411Z7ce[【电子】数字电子技术基础（数字电路/数电） 清华大学 王红主讲^]
+. 《微机原理与系统设计》
+.. https://www.bilibili.com/video/BV1ZJ411b7Na[微机原理 （西安电子科技大学）^]
+. 《计算机组成原理》
+.. https://www.bilibili.com/video/BV1t4411e7LH[计算机组成原理（哈工大刘宏伟）135讲（全）高清^]
+. 《深入理解计算机系统》
+. 《单片机》
+. 《自制 CPU》
+. 《自制 操作系统》
+. 设计和模拟数字逻辑电路
+. 《编码：隐匿在计算机软硬件背后的语言》
+. 《穿越计算机的迷雾》
+. 《计算机系统要素》
+.. LogicCircuit
+
+== 术语
+
+信息::
+数制::
+码制::
+布尔代数::
+真值表::
+半导体::
+. 本征半导体
+. 杂质半导体
+本征激发/复合::
+逻辑代数基础::
+器件::
+真空电子管::
+晶体管::
+集成电路::
+载流子::
+自由电子::
+空穴::
+元件::
+二极管::
+三极管::
+场效应管::
+A/D 转换器::
+D/A 转换器::
+数字万用表::
+示波器::
+洞洞板/万用板/面包板::
+PCB::
+printed circuit board，印刷电板。
+
+== 电
+
+* 电池输出直流电，生活使用交流电，方波交流电、正弦交流电
+* https://www.bilibili.com/video/BV1m64y1D7gb[直流电转换为交流电^]
+* https://www.bilibili.com/video/BV17v4y1Z7qs[交流电转换为直流电^]
+* 欧姆定律、串连分压、并连分流、短路 0V
+
+== 二极管
+
+* https://www.bilibili.com/video/BV1gE411h7Tr[什么是 PN 结？为什么只能单向导通？^]
+* https://www.bilibili.com/video/BV1Et411T7Dg[二极管&与门^]
+* https://www.bilibili.com/video/BV1qv411q7ya/[Multisim 仿真教程^]
+* https://www.bilibili.com/video/BV1yT4y1K7Yr[数字逻辑电路-与门、或门、非门，理论+实验，学习超简单！^]
+* https://www.bilibili.com/video/BV1aP4y1s7Vf[一个 8 位二进制CPU的设计和实现^]
+
+=== 晶振
+
+* https://www.bilibili.com/video/BV1k3411W7qx/[一本正经的电子电路入门^]
+** 《电子工程师的自我修养》、电工原理、模拟电子技术基础、数字电路
+* 压电效应、交变电压、压电谐振
+* https://www.bilibili.com/video/BV1k3411W7qx/[晶振是如何产生时钟周期的？^]
+* https://www.bilibili.com/video/BV1k3411W7qx/[时钟频率信号是如何影响 CPU 执行指令的？^]
+
+== 单片机
+
+* https://www.bilibili.com/video/BV1GE411e78D/[自学单片机一年多了，和大家分享一下自学的看法^]
+* https://www.bilibili.com/video/BV1to4y1R78W/[硬件工程师入门基础元器件课程^]
+* https://www.bilibili.com/video/BV19K411D7FS/[电子电路从入门到精通^]
+
+== 理论
+
+计算机的目的是什么？记录并表达概念世界，通过机械代替人脑运算。
+
+相关设备：
+
+. 算盘：临时记录了中间运算结果
+. https://www.bilibili.com/video/BV1LB4y1D7ge[差分机]
+. https://www.bilibili.com/video/BV1if4y1A7xJ/[手摇机械计算器^]
+. 电子计算机
+
+=== 图灵机
+
+* 什么是图灵机？
+* 为什么会有图灵机？解决可计算问题
+* 停机问题，对是否能解决所有可计算问题的质疑
+
+=== 冯洛伊曼架构
+
+* 如何只靠几个简单的指令，解决诸多复杂的问题？
+
+=== 关于悖论
+
+.案例
+* 矛盾悖论
+* 理发师悖论
+
+两个论断在特定场景下（自我指向）存在相互冲突。
+
+== 电压的传递
+
+. 短路电线的电压为 0，电流无穷大，热烧毁电线
+. 没有电阻无法形成电压。只需要很小的电压，电路就畅通无阻了，所以无法积累起更强的电压
+. MOS 管不通时，电压为什么可以传递？此时需要一个电阻
+
+
+
+== verilog 用什么软件
